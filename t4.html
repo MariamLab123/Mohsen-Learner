@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsen Learner</title>
+<style>
+*{
+    border:0;
+    margin:0;
+    text-decoration:none;
+    font-family:sans-serif;
+}  
+body{
+    background-color:azure;
+}  
+.bar{
+    background-color:beige;
+    width:100%;
+    position:fixed;
+}
+.space{
+    height:50px;
+}
+.video{
+    width:80%;
+    height:auto;
+    border-radius:10px;
+}
+.b{
+    background-color:brown;
+    border-radius:1000px;
+    font-size:30px;
+}
+.in{
+    background-color:cornflowerblue;
+    width:250px;
+    height:30px;
+    border-radius:10px;
+    outline:none;
+}
+.font{
+    display:none;
+}
+.font2{
+    display:none;
+}
+.b2{
+    display:none;
+    background-color:brown;
+    border-radius:1000px;
+    font-size:30px;
+}
+</style>    
+</head>
+<body>
+    <div class="bar"><center><nav><a href="index.html"><img src="home.png" alt="Home"></a><a href="map.html"><img src="map.png" alt="Map"></a><a href="learn.html"><img src="learn.png" alt="learn"></a></nav></center></div>
+    <h1 class="space"></h1>
+    <h1 class="space"></h1>
+    <h1 class="space"></h1>
+    <h2>Dentist</h2>
+    <input type="text" class="in" id="v1" placeholder="Enter meaning">
+    <h1 class="space"></h1>
+    <h2>Coat</h2>
+    <input type="text" class="in" id="v2" placeholder="Enter meaning">
+    <h1 class="space"></h1>
+    <h2>The dentist wears a white coat</h2>
+    <input type="text" class="in" id="v3" placeholder="Enter meaning">
+    <h1 class="space"></h1>
+    <button class="b">End</button>
+    <font class="font" color="green" size="25px">Good</font>
+    <font class="font2"  size="25px" color="red">Bad</font>
+    <a href="map.html"><button class="b2">Back</button></a>
+    <script>
+        let v1= document.getElementById("v1");
+        let v2= document.getElementById("v2");
+        let v3= document.getElementById("v3");
+        let b1= document.getElementsByClassName("b")[0];
+        let f1= document.getElementsByClassName("font")[0];
+        let f2= document.getElementsByClassName("font2")[0];
+        let b2= document.getElementsByClassName("b2")[0];
+        b1.onclick=function(){
+            if(v1.value=="طبيب الاسنان"){
+                f1.style.display="flex";
+                b2.style.display="flex";
+             
+            }
+            else if(v2.value=="بالطو"){
+                f1.style.display="flex";
+                b2.style.display="flex";
+            }
+            else if(v3.value=="طبيب الاسنان يرتدي بالطو ابيض"){
+                f1.style.display="flex";
+                b2.style.display="flex";
+                }
+            else{
+                f2.style.display="flex";
+                b2.style.display="flex";
+            }
+        }
+    </script>
+</body>
+</html>
